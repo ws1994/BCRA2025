@@ -1,0 +1,880 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <title>Middleware 2024 Photo Gallery</title>
+    <meta name="description" content="">
+    <meta name="author" content="None">
+    <meta name="viewport" content="width=device-width">
+
+    <link rel="stylesheet" href="static/css/normalize.css">
+    <link rel="stylesheet" href="static/themes/classic/galleria.classic.css">
+    <link rel="stylesheet" href="static/css/style.css">
+    <style>
+    body::after{
+        position:absolute; width:0; height:0; overflow:hidden; z-index:-1;
+        content:url(WILL7793.JPG);
+    }</style>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1><a href="./">Middleware 2024 Photo Gallery</a></h1>
+
+      </header>
+
+      <div id="main" role="main">
+<div class="icons">
+  <a id="fullscreen"><img src="static/img/fullscreen.png"
+                          title="Fullscreen" alt="Fullscreen (f)" /></a>
+</div>
+<div id="gallery"></div>
+
+
+
+
+    <script src="static/jquery-3.3.1.min.js"></script>
+    <script src="static/galleria.min.js"></script>
+    <script src="static/themes/classic/galleria.classic.min.js"></script>
+    <script src="static/plugins/history/galleria.history.min.js"></script>
+    <script>
+    var data = [
+{
+        title: "WILL7793",
+        description: "<div class='film-meta'><abbr title='film speed'>5000</abbr><abbr title='exposure'>1/125</abbr><abbr title='aperture'>6.3</abbr><abbr title='focal length'>27</abbr></div><abbr title='camera make and model'>Canon Canon EOS R5</abbr><abbr title='date'>12/4/2024 9:01:21 AM</abbr>",
+        thumb: "thumbnails/WILL7793.JPG",
+        image: "WILL7793.JPG"
+      },
+{
+        title: "WILL7815",
+        description: "<div class='film-meta'><abbr title='film speed'>1600</abbr><abbr title='exposure'>1/100</abbr><abbr title='aperture'>2.8</abbr><abbr title='focal length'>30</abbr></div><abbr title='camera make and model'>Canon Canon EOS R5</abbr><abbr title='date'>12/4/2024 9:06:15 AM</abbr>",
+        thumb: "thumbnails/WILL7815.JPG",
+        image: "WILL7815.JPG"
+      },
+{
+        title: "WILL7817",
+        description: "<div class='film-meta'><abbr title='film speed'>640</abbr><abbr title='exposure'>1/100</abbr><abbr title='aperture'>2.8</abbr><abbr title='focal length'>40</abbr></div><abbr title='camera make and model'>Canon Canon EOS R5</abbr><abbr title='date'>12/4/2024 9:06:43 AM</abbr>",
+        thumb: "thumbnails/WILL7817.JPG",
+        image: "WILL7817.JPG"
+      },
+{
+        title: "WILL7820",
+        description: "<div class='film-meta'><abbr title='film speed'>640</abbr><abbr title='exposure'>1/100</abbr><abbr title='aperture'>2.8</abbr><abbr title='focal length'>39</abbr></div><abbr title='camera make and model'>Canon Canon EOS R5</abbr><abbr title='date'>12/4/2024 9:06:52 AM</abbr>",
+        thumb: "thumbnails/WILL7820.JPG",
+        image: "WILL7820.JPG"
+      },
+{
+        title: "WILL7821",
+        description: "<div class='film-meta'><abbr title='film speed'>640</abbr><abbr title='exposure'>1/100</abbr><abbr title='aperture'>2.8</abbr><abbr title='focal length'>43</abbr></div><abbr title='camera make and model'>Canon Canon EOS R5</abbr><abbr title='date'>12/4/2024 9:07:01 AM</abbr>",
+        thumb: "thumbnails/WILL7821.JPG",
+        image: "WILL7821.JPG"
+      },
+{
+        title: "WILL7838",
+        description: "<div class='film-meta'><abbr title='film speed'>800</abbr><abbr title='exposure'>1/100</abbr><abbr title='aperture'>2.8</abbr><abbr title='focal length'>40</abbr></div><abbr title='camera make and model'>Canon Canon EOS R5</abbr><abbr title='date'>12/4/2024 9:14:52 AM</abbr>",
+        thumb: "thumbnails/WILL7838.JPG",
+        image: "WILL7838.JPG"
+      },
+{
+        title: "WILL7853",
+        description: "<div class='film-meta'><abbr title='film speed'>800</abbr><abbr title='exposure'>1/100</abbr><abbr title='aperture'>6.3</abbr><abbr title='focal length'>37</abbr></div><abbr title='camera make and model'>Canon Canon EOS R5</abbr><abbr title='date'>12/4/2024 9:18:10 AM</abbr>",
+        thumb: "thumbnails/WILL7853.JPG",
+        image: "WILL7853.JPG"
+      },
+{
+        title: "WILL7875",
+        description: "<div class='film-meta'><abbr title='film speed'>10000</abbr><abbr title='exposure'>1/125</abbr><abbr title='aperture'>7.1</abbr><abbr title='focal length'>14</abbr></div><abbr title='camera make and model'>Canon Canon EOS R5</abbr><abbr title='date'>12/4/2024 9:21:31 AM</abbr>",
+        thumb: "thumbnails/WILL7875.JPG",
+        image: "WILL7875.JPG"
+      },
+{
+        title: "WILL7886",
+        description: "<div class='film-meta'><abbr title='film speed'>2500</abbr><abbr title='exposure'>1/125</abbr><abbr title='aperture'>5.0</abbr><abbr title='focal length'>49</abbr></div><abbr title='camera make and model'>Canon Canon EOS R5</abbr><abbr title='date'>12/4/2024 9:23:07 AM</abbr>",
+        thumb: "thumbnails/WILL7886.JPG",
+        image: "WILL7886.JPG"
+      },
+{
+        title: "WILL7899",
+        description: "<div class='film-meta'><abbr title='film speed'>2500</abbr><abbr title='exposure'>1/100</abbr><abbr title='aperture'>4.0</abbr><abbr title='focal length'>14</abbr></div><abbr title='camera make and model'>Canon Canon EOS R5</abbr><abbr title='date'>12/4/2024 9:27:02 AM</abbr>",
+        thumb: "thumbnails/WILL7899.JPG",
+        image: "WILL7899.JPG"
+      },
+{
+        title: "WILL7936",
+        description: "<div class='film-meta'><abbr title='film speed'>4000</abbr><abbr title='exposure'>1/160</abbr><abbr title='aperture'>4.0</abbr><abbr title='focal length'>79</abbr></div><abbr title='camera make and model'>Canon Canon EOS R5</abbr><abbr title='date'>12/4/2024 9:36:17 AM</abbr>",
+        thumb: "thumbnails/WILL7936.JPG",
+        image: "WILL7936.JPG"
+      },
+{
+        title: "WILL7953",
+        description: "<div class='film-meta'><abbr title='film speed'>4000</abbr><abbr title='exposure'>1/160</abbr><abbr title='aperture'>2.8</abbr><abbr title='focal length'>200</abbr></div><abbr title='camera make and model'>Canon Canon EOS R5</abbr><abbr title='date'>12/4/2024 9:39:33 AM</abbr>",
+        thumb: "thumbnails/WILL7953.JPG",
+        image: "WILL7953.JPG"
+      },
+{
+        title: "WILL7971",
+        description: "<div class='film-meta'><abbr title='film speed'>4000</abbr><abbr title='exposure'>1/80</abbr><abbr title='aperture'>7.1</abbr><abbr title='focal length'>119</abbr></div><abbr title='camera make and model'>Canon Canon EOS R5</abbr><abbr title='date'>12/4/2024 9:44:37 AM</abbr>",
+        thumb: "thumbnails/WILL7971.JPG",
+        image: "WILL7971.JPG"
+      },
+{
+        title: "WILL7994",
+        description: "<div class='film-meta'><abbr title='film speed'>2500</abbr><abbr title='exposure'>1/80</abbr><abbr title='aperture'>7.1</abbr><abbr title='focal length'>92</abbr></div><abbr title='camera make and model'>Canon Canon EOS R5</abbr><abbr title='date'>12/4/2024 9:56:29 AM</abbr>",
+        thumb: "thumbnails/WILL7994.JPG",
+        image: "WILL7994.JPG"
+      },
+{
+        title: "WILL8044",
+        description: "<div class='film-meta'><abbr title='film speed'>1600</abbr><abbr title='exposure'>1/125</abbr><abbr title='aperture'>2.8</abbr><abbr title='focal length'>92</abbr></div><abbr title='camera make and model'>Canon Canon EOS R5</abbr><abbr title='date'>12/4/2024 10:27:28 AM</abbr>",
+        thumb: "thumbnails/WILL8044.JPG",
+        image: "WILL8044.JPG"
+      },
+{
+        title: "WILL8055",
+        description: "<div class='film-meta'><abbr title='film speed'>1600</abbr><abbr title='exposure'>1/100</abbr><abbr title='aperture'>2.8</abbr><abbr title='focal length'>92</abbr></div><abbr title='camera make and model'>Canon Canon EOS R5</abbr><abbr title='date'>12/4/2024 10:28:12 AM</abbr>",
+        thumb: "thumbnails/WILL8055.JPG",
+        image: "WILL8055.JPG"
+      },
+{
+        title: "WILL8061",
+        description: "<div class='film-meta'><abbr title='film speed'>1600</abbr><abbr title='exposure'>1/60</abbr><abbr title='aperture'>2.8</abbr><abbr title='focal length'>70</abbr></div><abbr title='camera make and model'>Canon Canon EOS R5</abbr><abbr title='date'>12/4/2024 10:32:06 AM</abbr>",
+        thumb: "thumbnails/WILL8061.JPG",
+        image: "WILL8061.JPG"
+      },
+{
+        title: "WILL8065",
+        description: "<div class='film-meta'><abbr title='film speed'>1600</abbr><abbr title='exposure'>1/50</abbr><abbr title='aperture'>2.8</abbr><abbr title='focal length'>200</abbr></div><abbr title='camera make and model'>Canon Canon EOS R5</abbr><abbr title='date'>12/4/2024 10:33:16 AM</abbr>",
+        thumb: "thumbnails/WILL8065.JPG",
+        image: "WILL8065.JPG"
+      },
+{
+        title: "WILL8072",
+        description: "<div class='film-meta'><abbr title='film speed'>1600</abbr><abbr title='exposure'>1/50</abbr><abbr title='aperture'>3.2</abbr><abbr title='focal length'>70</abbr></div><abbr title='camera make and model'>Canon Canon EOS R5</abbr><abbr title='date'>12/4/2024 10:34:46 AM</abbr>",
+        thumb: "thumbnails/WILL8072.JPG",
+        image: "WILL8072.JPG"
+      },
+{
+        title: "WILL8075",
+        description: "<div class='film-meta'><abbr title='film speed'>1600</abbr><abbr title='exposure'>1/50</abbr><abbr title='aperture'>3.2</abbr><abbr title='focal length'>81</abbr></div><abbr title='camera make and model'>Canon Canon EOS R5</abbr><abbr title='date'>12/4/2024 10:35:40 AM</abbr>",
+        thumb: "thumbnails/WILL8075.JPG",
+        image: "WILL8075.JPG"
+      },
+{
+        title: "WILL8085",
+        description: "<div class='film-meta'><abbr title='film speed'>1600</abbr><abbr title='exposure'>1/50</abbr><abbr title='aperture'>3.2</abbr><abbr title='focal length'>147</abbr></div><abbr title='camera make and model'>Canon Canon EOS R5</abbr><abbr title='date'>12/4/2024 10:37:32 AM</abbr>",
+        thumb: "thumbnails/WILL8085.JPG",
+        image: "WILL8085.JPG"
+      },
+{
+        title: "WILL8093",
+        description: "<div class='film-meta'><abbr title='film speed'>1600</abbr><abbr title='exposure'>1/50</abbr><abbr title='aperture'>3.2</abbr><abbr title='focal length'>128</abbr></div><abbr title='camera make and model'>Canon Canon EOS R5</abbr><abbr title='date'>12/4/2024 10:41:28 AM</abbr>",
+        thumb: "thumbnails/WILL8093.JPG",
+        image: "WILL8093.JPG"
+      },
+{
+        title: "WILL8095",
+        description: "<div class='film-meta'><abbr title='film speed'>1600</abbr><abbr title='exposure'>1/50</abbr><abbr title='aperture'>3.2</abbr><abbr title='focal length'>147</abbr></div><abbr title='camera make and model'>Canon Canon EOS R5</abbr><abbr title='date'>12/4/2024 10:42:35 AM</abbr>",
+        thumb: "thumbnails/WILL8095.JPG",
+        image: "WILL8095.JPG"
+      },
+{
+        title: "WILL8110",
+        description: "<div class='film-meta'><abbr title='film speed'>1600</abbr><abbr title='exposure'>1/30</abbr><abbr title='aperture'>9.0</abbr><abbr title='focal length'>28</abbr></div><abbr title='camera make and model'>Canon Canon EOS R5</abbr><abbr title='date'>12/4/2024 10:45:06 AM</abbr>",
+        thumb: "thumbnails/WILL8110.JPG",
+        image: "WILL8110.JPG"
+      },
+{
+        title: "WILL8138",
+        description: "<div class='film-meta'><abbr title='film speed'>1600</abbr><abbr title='exposure'>1/160</abbr><abbr title='aperture'>2.0</abbr><abbr title='focal length'>40</abbr></div><abbr title='camera make and model'>Canon Canon EOS R5</abbr><abbr title='date'>12/4/2024 10:48:34 AM</abbr>",
+        thumb: "thumbnails/WILL8138.JPG",
+        image: "WILL8138.JPG"
+      },
+{
+        title: "WILL8147",
+        description: "<div class='film-meta'><abbr title='film speed'>1600</abbr><abbr title='exposure'>1/160</abbr><abbr title='aperture'>2.0</abbr><abbr title='focal length'>28</abbr></div><abbr title='camera make and model'>Canon Canon EOS R5</abbr><abbr title='date'>12/4/2024 10:50:02 AM</abbr>",
+        thumb: "thumbnails/WILL8147.JPG",
+        image: "WILL8147.JPG"
+      },
+{
+        title: "WILL8149",
+        description: "<div class='film-meta'><abbr title='film speed'>1600</abbr><abbr title='exposure'>1/160</abbr><abbr title='aperture'>2.0</abbr><abbr title='focal length'>28</abbr></div><abbr title='camera make and model'>Canon Canon EOS R5</abbr><abbr title='date'>12/4/2024 10:50:16 AM</abbr>",
+        thumb: "thumbnails/WILL8149.JPG",
+        image: "WILL8149.JPG"
+      },
+{
+        title: "WILL8161",
+        description: "<div class='film-meta'><abbr title='film speed'>1250</abbr><abbr title='exposure'>1/160</abbr><abbr title='aperture'>2.2</abbr><abbr title='focal length'>35</abbr></div><abbr title='camera make and model'>Canon Canon EOS R5</abbr><abbr title='date'>12/4/2024 10:54:31 AM</abbr>",
+        thumb: "thumbnails/WILL8161.JPG",
+        image: "WILL8161.JPG"
+      },
+{
+        title: "WILL8512",
+        description: "<div class='film-meta'><abbr title='film speed'>2000</abbr><abbr title='exposure'>1/200</abbr><abbr title='aperture'>4.0</abbr><abbr title='focal length'>22</abbr></div><abbr title='camera make and model'>Canon Canon EOS R5</abbr><abbr title='date'>12/4/2024 5:37:54 PM</abbr>",
+        thumb: "thumbnails/WILL8512.JPG",
+        image: "WILL8512.JPG"
+      },
+{
+        title: "WILL8513",
+        description: "<div class='film-meta'><abbr title='film speed'>2000</abbr><abbr title='exposure'>1/200</abbr><abbr title='aperture'>4.0</abbr><abbr title='focal length'>19</abbr></div><abbr title='camera make and model'>Canon Canon EOS R5</abbr><abbr title='date'>12/4/2024 5:38:15 PM</abbr>",
+        thumb: "thumbnails/WILL8513.JPG",
+        image: "WILL8513.JPG"
+      },
+{
+        title: "WILL8517",
+        description: "<div class='film-meta'><abbr title='film speed'>2000</abbr><abbr title='exposure'>1/200</abbr><abbr title='aperture'>4.0</abbr><abbr title='focal length'>21</abbr></div><abbr title='camera make and model'>Canon Canon EOS R5</abbr><abbr title='date'>12/4/2024 5:39:08 PM</abbr>",
+        thumb: "thumbnails/WILL8517.JPG",
+        image: "WILL8517.JPG"
+      },
+{
+        title: "WILL8522",
+        description: "<div class='film-meta'><abbr title='film speed'>2000</abbr><abbr title='exposure'>1/200</abbr><abbr title='aperture'>4.0</abbr><abbr title='focal length'>17</abbr></div><abbr title='camera make and model'>Canon Canon EOS R5</abbr><abbr title='date'>12/4/2024 5:39:32 PM</abbr>",
+        thumb: "thumbnails/WILL8522.JPG",
+        image: "WILL8522.JPG"
+      },
+{
+        title: "WILL8527",
+        description: "<div class='film-meta'><abbr title='film speed'>2000</abbr><abbr title='exposure'>1/200</abbr><abbr title='aperture'>4.0</abbr><abbr title='focal length'>20</abbr></div><abbr title='camera make and model'>Canon Canon EOS R5</abbr><abbr title='date'>12/4/2024 5:40:32 PM</abbr>",
+        thumb: "thumbnails/WILL8527.JPG",
+        image: "WILL8527.JPG"
+      },
+{
+        title: "WILL8538",
+        description: "<div class='film-meta'><abbr title='film speed'>2000</abbr><abbr title='exposure'>1/125</abbr><abbr title='aperture'>4.0</abbr><abbr title='focal length'>35</abbr></div><abbr title='camera make and model'>Canon Canon EOS R5</abbr><abbr title='date'>12/4/2024 5:42:17 PM</abbr>",
+        thumb: "thumbnails/WILL8538.JPG",
+        image: "WILL8538.JPG"
+      },
+{
+        title: "WILL8553",
+        description: "<div class='film-meta'><abbr title='film speed'>2000</abbr><abbr title='exposure'>1/125</abbr><abbr title='aperture'>4.0</abbr><abbr title='focal length'>35</abbr></div><abbr title='camera make and model'>Canon Canon EOS R5</abbr><abbr title='date'>12/4/2024 5:45:14 PM</abbr>",
+        thumb: "thumbnails/WILL8553.JPG",
+        image: "WILL8553.JPG"
+      },
+{
+        title: "WILL8565",
+        description: "<div class='film-meta'><abbr title='film speed'>2000</abbr><abbr title='exposure'>1/100</abbr><abbr title='aperture'>4.0</abbr><abbr title='focal length'>14</abbr></div><abbr title='camera make and model'>Canon Canon EOS R5</abbr><abbr title='date'>12/4/2024 5:48:20 PM</abbr>",
+        thumb: "thumbnails/WILL8565.JPG",
+        image: "WILL8565.JPG"
+      },
+{
+        title: "WILL8588",
+        description: "<div class='film-meta'><abbr title='film speed'>2000</abbr><abbr title='exposure'>1/100</abbr><abbr title='aperture'>4.0</abbr><abbr title='focal length'>14</abbr></div><abbr title='camera make and model'>Canon Canon EOS R5</abbr><abbr title='date'>12/4/2024 5:54:10 PM</abbr>",
+        thumb: "thumbnails/WILL8588.JPG",
+        image: "WILL8588.JPG"
+      },
+{
+        title: "WILL8601",
+        description: "<div class='film-meta'><abbr title='film speed'>2000</abbr><abbr title='exposure'>1/100</abbr><abbr title='aperture'>4.0</abbr><abbr title='focal length'>31</abbr></div><abbr title='camera make and model'>Canon Canon EOS R5</abbr><abbr title='date'>12/4/2024 5:58:24 PM</abbr>",
+        thumb: "thumbnails/WILL8601.JPG",
+        image: "WILL8601.JPG"
+      },
+{
+        title: "WILL8610",
+        description: "<div class='film-meta'><abbr title='film speed'>2000</abbr><abbr title='exposure'>1/100</abbr><abbr title='aperture'>4.0</abbr><abbr title='focal length'>21</abbr></div><abbr title='camera make and model'>Canon Canon EOS R5</abbr><abbr title='date'>12/4/2024 6:02:07 PM</abbr>",
+        thumb: "thumbnails/WILL8610.JPG",
+        image: "WILL8610.JPG"
+      },
+{
+        title: "WILL8614",
+        description: "<div class='film-meta'><abbr title='film speed'>2000</abbr><abbr title='exposure'>1/100</abbr><abbr title='aperture'>4.0</abbr><abbr title='focal length'>19</abbr></div><abbr title='camera make and model'>Canon Canon EOS R5</abbr><abbr title='date'>12/4/2024 6:03:23 PM</abbr>",
+        thumb: "thumbnails/WILL8614.JPG",
+        image: "WILL8614.JPG"
+      },
+{
+        title: "WILL8663",
+        description: "<div class='film-meta'><abbr title='film speed'>2500</abbr><abbr title='exposure'>1/80</abbr><abbr title='aperture'>4.0</abbr><abbr title='focal length'>43</abbr></div><abbr title='camera make and model'>Canon Canon EOS R5</abbr><abbr title='date'>12/4/2024 6:27:17 PM</abbr>",
+        thumb: "thumbnails/WILL8663.JPG",
+        image: "WILL8663.JPG"
+      },
+{
+        title: "WILL8665",
+        description: "<div class='film-meta'><abbr title='film speed'>2500</abbr><abbr title='exposure'>1/80</abbr><abbr title='aperture'>4.0</abbr><abbr title='focal length'>28</abbr></div><abbr title='camera make and model'>Canon Canon EOS R5</abbr><abbr title='date'>12/4/2024 6:27:50 PM</abbr>",
+        thumb: "thumbnails/WILL8665.JPG",
+        image: "WILL8665.JPG"
+      },
+{
+        title: "WILL8683",
+        description: "<div class='film-meta'><abbr title='film speed'>2500</abbr><abbr title='exposure'>1/80</abbr><abbr title='aperture'>5.6</abbr><abbr title='focal length'>16</abbr></div><abbr title='camera make and model'>Canon Canon EOS R5</abbr><abbr title='date'>12/4/2024 6:43:09 PM</abbr>",
+        thumb: "thumbnails/WILL8683.JPG",
+        image: "WILL8683.JPG"
+      },
+{
+        title: "WILL8700",
+        description: "<div class='film-meta'><abbr title='film speed'>2500</abbr><abbr title='exposure'>1/40</abbr><abbr title='aperture'>7.1</abbr><abbr title='focal length'>44</abbr></div><abbr title='camera make and model'>Canon Canon EOS R5</abbr><abbr title='date'>12/4/2024 6:51:44 PM</abbr>",
+        thumb: "thumbnails/WILL8700.JPG",
+        image: "WILL8700.JPG"
+      },
+{
+        title: "WILL8706",
+        description: "<div class='film-meta'><abbr title='film speed'>2500</abbr><abbr title='exposure'>1/60</abbr><abbr title='aperture'>5.6</abbr><abbr title='focal length'>19</abbr></div><abbr title='camera make and model'>Canon Canon EOS R5</abbr><abbr title='date'>12/4/2024 6:53:15 PM</abbr>",
+        thumb: "thumbnails/WILL8706.JPG",
+        image: "WILL8706.JPG"
+      },
+{
+        title: "WILL8738",
+        description: "<div class='film-meta'><abbr title='film speed'>2500</abbr><abbr title='exposure'>1/80</abbr><abbr title='aperture'>5.6</abbr><abbr title='focal length'>28</abbr></div><abbr title='camera make and model'>Canon Canon EOS R5</abbr><abbr title='date'>12/4/2024 7:05:59 PM</abbr>",
+        thumb: "thumbnails/WILL8738.JPG",
+        image: "WILL8738.JPG"
+      },
+{
+        title: "WILL8740",
+        description: "<div class='film-meta'><abbr title='film speed'>2500</abbr><abbr title='exposure'>1/80</abbr><abbr title='aperture'>5.6</abbr><abbr title='focal length'>28</abbr></div><abbr title='camera make and model'>Canon Canon EOS R5</abbr><abbr title='date'>12/4/2024 7:06:41 PM</abbr>",
+        thumb: "thumbnails/WILL8740.JPG",
+        image: "WILL8740.JPG"
+      },
+{
+        title: "WILL8767",
+        description: "<div class='film-meta'><abbr title='film speed'>2500</abbr><abbr title='exposure'>1/60</abbr><abbr title='aperture'>9.0</abbr><abbr title='focal length'>32</abbr></div><abbr title='camera make and model'>Canon Canon EOS R5</abbr><abbr title='date'>12/4/2024 7:20:59 PM</abbr>",
+        thumb: "thumbnails/WILL8767.JPG",
+        image: "WILL8767.JPG"
+      },
+{
+        title: "WILL8770",
+        description: "<div class='film-meta'><abbr title='film speed'>2500</abbr><abbr title='exposure'>1/60</abbr><abbr title='aperture'>10.0</abbr><abbr title='focal length'>43</abbr></div><abbr title='camera make and model'>Canon Canon EOS R5</abbr><abbr title='date'>12/4/2024 7:23:24 PM</abbr>",
+        thumb: "thumbnails/WILL8770.JPG",
+        image: "WILL8770.JPG"
+      },
+{
+        title: "WILL8782",
+        description: "<div class='film-meta'><abbr title='film speed'>2500</abbr><abbr title='exposure'>1/160</abbr><abbr title='aperture'>2.8</abbr><abbr title='focal length'>92</abbr></div><abbr title='camera make and model'>Canon Canon EOS R5</abbr><abbr title='date'>12/4/2024 7:38:11 PM</abbr>",
+        thumb: "thumbnails/WILL8782.JPG",
+        image: "WILL8782.JPG"
+      },
+{
+        title: "WILL8793",
+        description: "<div class='film-meta'><abbr title='film speed'>1000</abbr><abbr title='exposure'>1/160</abbr><abbr title='aperture'>2.0</abbr><abbr title='focal length'>47</abbr></div><abbr title='camera make and model'>Canon Canon EOS R5</abbr><abbr title='date'>12/5/2024 9:09:11 AM</abbr>",
+        thumb: "thumbnails/WILL8793.JPG",
+        image: "WILL8793.JPG"
+      },
+{
+        title: "WILL8811",
+        description: "<div class='film-meta'><abbr title='film speed'>400</abbr><abbr title='exposure'>1/50</abbr><abbr title='aperture'>2.2</abbr><abbr title='focal length'>37</abbr></div><abbr title='camera make and model'>Canon Canon EOS R5</abbr><abbr title='date'>12/5/2024 9:14:13 AM</abbr>",
+        thumb: "thumbnails/WILL8811.JPG",
+        image: "WILL8811.JPG"
+      },
+{
+        title: "WILL8824",
+        description: "<div class='film-meta'><abbr title='film speed'>2500</abbr><abbr title='exposure'>1/60</abbr><abbr title='aperture'>5.6</abbr><abbr title='focal length'>92</abbr></div><abbr title='camera make and model'>Canon Canon EOS R5</abbr><abbr title='date'>12/5/2024 9:18:24 AM</abbr>",
+        thumb: "thumbnails/WILL8824.JPG",
+        image: "WILL8824.JPG"
+      },
+{
+        title: "WILL8848",
+        description: "<div class='film-meta'><abbr title='film speed'>640</abbr><abbr title='exposure'>1/40</abbr><abbr title='aperture'>4.0</abbr><abbr title='focal length'>14</abbr></div><abbr title='camera make and model'>Canon Canon EOS R5</abbr><abbr title='date'>12/5/2024 9:31:09 AM</abbr>",
+        thumb: "thumbnails/WILL8848.JPG",
+        image: "WILL8848.JPG"
+      },
+{
+        title: "WILL8856",
+        description: "<div class='film-meta'><abbr title='film speed'>640</abbr><abbr title='exposure'>1/60</abbr><abbr title='aperture'>3.2</abbr><abbr title='focal length'>70</abbr></div><abbr title='camera make and model'>Canon Canon EOS R5</abbr><abbr title='date'>12/5/2024 9:33:08 AM</abbr>",
+        thumb: "thumbnails/WILL8856.JPG",
+        image: "WILL8856.JPG"
+      },
+{
+        title: "WILL8877",
+        description: "<div class='film-meta'><abbr title='film speed'>640</abbr><abbr title='exposure'>1/50</abbr><abbr title='aperture'>3.2</abbr><abbr title='focal length'>200</abbr></div><abbr title='camera make and model'>Canon Canon EOS R5</abbr><abbr title='date'>12/5/2024 9:39:31 AM</abbr>",
+        thumb: "thumbnails/WILL8877.JPG",
+        image: "WILL8877.JPG"
+      },
+{
+        title: "WILL8921",
+        description: "<div class='film-meta'><abbr title='film speed'>1000</abbr><abbr title='exposure'>1/50</abbr><abbr title='aperture'>4.0</abbr><abbr title='focal length'>16</abbr></div><abbr title='camera make and model'>Canon Canon EOS R5</abbr><abbr title='date'>12/5/2024 9:59:33 AM</abbr>",
+        thumb: "thumbnails/WILL8921.JPG",
+        image: "WILL8921.JPG"
+      },
+{
+        title: "WILL8960",
+        description: "<div class='film-meta'><abbr title='film speed'>640</abbr><abbr title='exposure'>1/40</abbr><abbr title='aperture'>3.2</abbr><abbr title='focal length'>79</abbr></div><abbr title='camera make and model'>Canon Canon EOS R5</abbr><abbr title='date'>12/5/2024 10:20:18 AM</abbr>",
+        thumb: "thumbnails/WILL8960.JPG",
+        image: "WILL8960.JPG"
+      },
+{
+        title: "WILL8983",
+        description: "<div class='film-meta'><abbr title='film speed'>640</abbr><abbr title='exposure'>1/60</abbr><abbr title='aperture'>3.2</abbr><abbr title='focal length'>28</abbr></div><abbr title='camera make and model'>Canon Canon EOS R5</abbr><abbr title='date'>12/5/2024 10:27:36 AM</abbr>",
+        thumb: "thumbnails/WILL8983.JPG",
+        image: "WILL8983.JPG"
+      },
+{
+        title: "WILL8999",
+        description: "<div class='film-meta'><abbr title='film speed'>640</abbr><abbr title='exposure'>1/100</abbr><abbr title='aperture'>3.5</abbr><abbr title='focal length'>28</abbr></div><abbr title='camera make and model'>Canon Canon EOS R5</abbr><abbr title='date'>12/5/2024 10:31:28 AM</abbr>",
+        thumb: "thumbnails/WILL8999.JPG",
+        image: "WILL8999.JPG"
+      },
+{
+        title: "WILL9007",
+        description: "<div class='film-meta'><abbr title='film speed'>2500</abbr><abbr title='exposure'>1/100</abbr><abbr title='aperture'>3.5</abbr><abbr title='focal length'>40</abbr></div><abbr title='camera make and model'>Canon Canon EOS R5</abbr><abbr title='date'>12/5/2024 10:34:22 AM</abbr>",
+        thumb: "thumbnails/WILL9007.JPG",
+        image: "WILL9007.JPG"
+      },
+{
+        title: "WILL9011",
+        description: "<div class='film-meta'><abbr title='film speed'>2500</abbr><abbr title='exposure'>1/400</abbr><abbr title='aperture'>3.5</abbr><abbr title='focal length'>28</abbr></div><abbr title='camera make and model'>Canon Canon EOS R5</abbr><abbr title='date'>12/5/2024 10:34:52 AM</abbr>",
+        thumb: "thumbnails/WILL9011.JPG",
+        image: "WILL9011.JPG"
+      },
+{
+        title: "WILL9017",
+        description: "<div class='film-meta'><abbr title='film speed'>2500</abbr><abbr title='exposure'>1/400</abbr><abbr title='aperture'>3.5</abbr><abbr title='focal length'>28</abbr></div><abbr title='camera make and model'>Canon Canon EOS R5</abbr><abbr title='date'>12/5/2024 10:35:14 AM</abbr>",
+        thumb: "thumbnails/WILL9017.JPG",
+        image: "WILL9017.JPG"
+      },
+{
+        title: "WILL9021",
+        description: "<div class='film-meta'><abbr title='film speed'>2500</abbr><abbr title='exposure'>1/400</abbr><abbr title='aperture'>3.5</abbr><abbr title='focal length'>124</abbr></div><abbr title='camera make and model'>Canon Canon EOS R5</abbr><abbr title='date'>12/5/2024 10:37:11 AM</abbr>",
+        thumb: "thumbnails/WILL9021.JPG",
+        image: "WILL9021.JPG"
+      },
+{
+        title: "WILL9037",
+        description: "<div class='film-meta'><abbr title='film speed'>640</abbr><abbr title='exposure'>1/100</abbr><abbr title='aperture'>2.8</abbr><abbr title='focal length'>50</abbr></div><abbr title='camera make and model'>Canon Canon EOS R5</abbr><abbr title='date'>12/5/2024 10:48:17 AM</abbr>",
+        thumb: "thumbnails/WILL9037.JPG",
+        image: "WILL9037.JPG"
+      },
+{
+        title: "WILL9046",
+        description: "<div class='film-meta'><abbr title='film speed'>640</abbr><abbr title='exposure'>1/60</abbr><abbr title='aperture'>4.0</abbr><abbr title='focal length'>14</abbr></div><abbr title='camera make and model'>Canon Canon EOS R5</abbr><abbr title='date'>12/5/2024 10:51:31 AM</abbr>",
+        thumb: "thumbnails/WILL9046.JPG",
+        image: "WILL9046.JPG"
+      },
+{
+        title: "WILL9548",
+        description: "<div class='film-meta'><abbr title='film speed'>10000</abbr><abbr title='exposure'>1/50</abbr><abbr title='aperture'>4.0</abbr><abbr title='focal length'>14</abbr></div><abbr title='camera make and model'>Canon Canon EOS R5</abbr><abbr title='date'>12/5/2024 6:05:43 PM</abbr>",
+        thumb: "thumbnails/WILL9548.JPG",
+        image: "WILL9548.JPG"
+      },
+{
+        title: "WILL9554",
+        description: "<div class='film-meta'><abbr title='film speed'>10000</abbr><abbr title='exposure'>1/50</abbr><abbr title='aperture'>4.0</abbr><abbr title='focal length'>24</abbr></div><abbr title='camera make and model'>Canon Canon EOS R5</abbr><abbr title='date'>12/5/2024 6:09:46 PM</abbr>",
+        thumb: "thumbnails/WILL9554.JPG",
+        image: "WILL9554.JPG"
+      },
+{
+        title: "WILL9558",
+        description: "<div class='film-meta'><abbr title='film speed'>3200</abbr><abbr title='exposure'>1/50</abbr><abbr title='aperture'>4.0</abbr><abbr title='focal length'>16</abbr></div><abbr title='camera make and model'>Canon Canon EOS R5</abbr><abbr title='date'>12/5/2024 6:27:43 PM</abbr>",
+        thumb: "thumbnails/WILL9558.JPG",
+        image: "WILL9558.JPG"
+      },
+{
+        title: "WILL9563",
+        description: "<div class='film-meta'><abbr title='film speed'>3200</abbr><abbr title='exposure'>1/30</abbr><abbr title='aperture'>4.0</abbr><abbr title='focal length'>26</abbr></div><abbr title='camera make and model'>Canon Canon EOS R5</abbr><abbr title='date'>12/5/2024 6:28:32 PM</abbr>",
+        thumb: "thumbnails/WILL9563.JPG",
+        image: "WILL9563.JPG"
+      },
+{
+        title: "WILL9566",
+        description: "<div class='film-meta'><abbr title='film speed'>3200</abbr><abbr title='exposure'>1/30</abbr><abbr title='aperture'>4.0</abbr><abbr title='focal length'>22</abbr></div><abbr title='camera make and model'>Canon Canon EOS R5</abbr><abbr title='date'>12/5/2024 6:29:17 PM</abbr>",
+        thumb: "thumbnails/WILL9566.JPG",
+        image: "WILL9566.JPG"
+      },
+{
+        title: "WILL9570",
+        description: "<div class='film-meta'><abbr title='film speed'>3200</abbr><abbr title='exposure'>1/30</abbr><abbr title='aperture'>4.0</abbr><abbr title='focal length'>35</abbr></div><abbr title='camera make and model'>Canon Canon EOS R5</abbr><abbr title='date'>12/5/2024 6:30:03 PM</abbr>",
+        thumb: "thumbnails/WILL9570.JPG",
+        image: "WILL9570.JPG"
+      },
+{
+        title: "WILL9575",
+        description: "<div class='film-meta'><abbr title='film speed'>3200</abbr><abbr title='exposure'>1/30</abbr><abbr title='aperture'>4.0</abbr><abbr title='focal length'>30</abbr></div><abbr title='camera make and model'>Canon Canon EOS R5</abbr><abbr title='date'>12/5/2024 6:30:15 PM</abbr>",
+        thumb: "thumbnails/WILL9575.JPG",
+        image: "WILL9575.JPG"
+      },
+{
+        title: "WILL9576",
+        description: "<div class='film-meta'><abbr title='film speed'>3200</abbr><abbr title='exposure'>1/30</abbr><abbr title='aperture'>4.0</abbr><abbr title='focal length'>17</abbr></div><abbr title='camera make and model'>Canon Canon EOS R5</abbr><abbr title='date'>12/5/2024 6:46:48 PM</abbr>",
+        thumb: "thumbnails/WILL9576.JPG",
+        image: "WILL9576.JPG"
+      },
+{
+        title: "WILL9581",
+        description: "<div class='film-meta'><abbr title='film speed'>3200</abbr><abbr title='exposure'>1/80</abbr><abbr title='aperture'>4.0</abbr><abbr title='focal length'>14</abbr></div><abbr title='camera make and model'>Canon Canon EOS R5</abbr><abbr title='date'>12/5/2024 6:54:18 PM</abbr>",
+        thumb: "thumbnails/WILL9581.JPG",
+        image: "WILL9581.JPG"
+      },
+{
+        title: "WILL9586",
+        description: "<div class='film-meta'><abbr title='film speed'>3200</abbr><abbr title='exposure'>1/100</abbr><abbr title='aperture'>6.3</abbr><abbr title='focal length'>22</abbr></div><abbr title='camera make and model'>Canon Canon EOS R5</abbr><abbr title='date'>12/5/2024 7:01:27 PM</abbr>",
+        thumb: "thumbnails/WILL9586.JPG",
+        image: "WILL9586.JPG"
+      },
+{
+        title: "WILL9591",
+        description: "<div class='film-meta'><abbr title='film speed'>3200</abbr><abbr title='exposure'>1/100</abbr><abbr title='aperture'>8.0</abbr><abbr title='focal length'>26</abbr></div><abbr title='camera make and model'>Canon Canon EOS R5</abbr><abbr title='date'>12/5/2024 7:02:11 PM</abbr>",
+        thumb: "thumbnails/WILL9591.JPG",
+        image: "WILL9591.JPG"
+      },
+{
+        title: "WILL9602",
+        description: "<div class='film-meta'><abbr title='film speed'>3200</abbr><abbr title='exposure'>1/100</abbr><abbr title='aperture'>8.0</abbr><abbr title='focal length'>26</abbr></div><abbr title='camera make and model'>Canon Canon EOS R5</abbr><abbr title='date'>12/5/2024 7:02:58 PM</abbr>",
+        thumb: "thumbnails/WILL9602.JPG",
+        image: "WILL9602.JPG"
+      },
+{
+        title: "WILL9606",
+        description: "<div class='film-meta'><abbr title='film speed'>3200</abbr><abbr title='exposure'>1/100</abbr><abbr title='aperture'>8.0</abbr><abbr title='focal length'>24</abbr></div><abbr title='camera make and model'>Canon Canon EOS R5</abbr><abbr title='date'>12/5/2024 7:03:15 PM</abbr>",
+        thumb: "thumbnails/WILL9606.JPG",
+        image: "WILL9606.JPG"
+      },
+{
+        title: "WILL9611",
+        description: "<div class='film-meta'><abbr title='film speed'>3200</abbr><abbr title='exposure'>1/100</abbr><abbr title='aperture'>8.0</abbr><abbr title='focal length'>24</abbr></div><abbr title='camera make and model'>Canon Canon EOS R5</abbr><abbr title='date'>12/5/2024 7:03:44 PM</abbr>",
+        thumb: "thumbnails/WILL9611.JPG",
+        image: "WILL9611.JPG"
+      },
+{
+        title: "WILL9615",
+        description: "<div class='film-meta'><abbr title='film speed'>3200</abbr><abbr title='exposure'>1/100</abbr><abbr title='aperture'>8.0</abbr><abbr title='focal length'>20</abbr></div><abbr title='camera make and model'>Canon Canon EOS R5</abbr><abbr title='date'>12/5/2024 7:04:36 PM</abbr>",
+        thumb: "thumbnails/WILL9615.JPG",
+        image: "WILL9615.JPG"
+      },
+{
+        title: "WILL9616",
+        description: "<div class='film-meta'><abbr title='film speed'>3200</abbr><abbr title='exposure'>1/100</abbr><abbr title='aperture'>8.0</abbr><abbr title='focal length'>14</abbr></div><abbr title='camera make and model'>Canon Canon EOS R5</abbr><abbr title='date'>12/5/2024 7:04:55 PM</abbr>",
+        thumb: "thumbnails/WILL9616.JPG",
+        image: "WILL9616.JPG"
+      },
+{
+        title: "WILL9622",
+        description: "<div class='film-meta'><abbr title='film speed'>3200</abbr><abbr title='exposure'>1/100</abbr><abbr title='aperture'>8.0</abbr><abbr title='focal length'>22</abbr></div><abbr title='camera make and model'>Canon Canon EOS R5</abbr><abbr title='date'>12/5/2024 7:05:20 PM</abbr>",
+        thumb: "thumbnails/WILL9622.JPG",
+        image: "WILL9622.JPG"
+      },
+{
+        title: "WILL9625",
+        description: "<div class='film-meta'><abbr title='film speed'>3200</abbr><abbr title='exposure'>1/100</abbr><abbr title='aperture'>8.0</abbr><abbr title='focal length'>21</abbr></div><abbr title='camera make and model'>Canon Canon EOS R5</abbr><abbr title='date'>12/5/2024 7:05:37 PM</abbr>",
+        thumb: "thumbnails/WILL9625.JPG",
+        image: "WILL9625.JPG"
+      },
+{
+        title: "WILL9628",
+        description: "<div class='film-meta'><abbr title='film speed'>3200</abbr><abbr title='exposure'>1/100</abbr><abbr title='aperture'>8.0</abbr><abbr title='focal length'>16</abbr></div><abbr title='camera make and model'>Canon Canon EOS R5</abbr><abbr title='date'>12/5/2024 7:06:02 PM</abbr>",
+        thumb: "thumbnails/WILL9628.JPG",
+        image: "WILL9628.JPG"
+      },
+{
+        title: "WILL9631",
+        description: "<div class='film-meta'><abbr title='film speed'>3200</abbr><abbr title='exposure'>1/100</abbr><abbr title='aperture'>8.0</abbr><abbr title='focal length'>19</abbr></div><abbr title='camera make and model'>Canon Canon EOS R5</abbr><abbr title='date'>12/5/2024 7:06:25 PM</abbr>",
+        thumb: "thumbnails/WILL9631.JPG",
+        image: "WILL9631.JPG"
+      },
+{
+        title: "WILL9635",
+        description: "<div class='film-meta'><abbr title='film speed'>3200</abbr><abbr title='exposure'>1/100</abbr><abbr title='aperture'>8.0</abbr><abbr title='focal length'>20</abbr></div><abbr title='camera make and model'>Canon Canon EOS R5</abbr><abbr title='date'>12/5/2024 7:06:57 PM</abbr>",
+        thumb: "thumbnails/WILL9635.JPG",
+        image: "WILL9635.JPG"
+      },
+{
+        title: "WILL9645",
+        description: "<div class='film-meta'><abbr title='film speed'>800</abbr><abbr title='exposure'>1/200</abbr><abbr title='aperture'>4.5</abbr><abbr title='focal length'>40</abbr></div><abbr title='camera make and model'>Canon Canon EOS R5</abbr><abbr title='date'>12/5/2024 7:08:47 PM</abbr>",
+        thumb: "thumbnails/WILL9645.JPG",
+        image: "WILL9645.JPG"
+      },
+{
+        title: "WILL9655",
+        description: "<div class='film-meta'><abbr title='film speed'>800</abbr><abbr title='exposure'>1/160</abbr><abbr title='aperture'>4.5</abbr><abbr title='focal length'>41</abbr></div><abbr title='camera make and model'>Canon Canon EOS R5</abbr><abbr title='date'>12/5/2024 7:09:31 PM</abbr>",
+        thumb: "thumbnails/WILL9655.JPG",
+        image: "WILL9655.JPG"
+      },
+{
+        title: "WILL9666",
+        description: "<div class='film-meta'><abbr title='film speed'>800</abbr><abbr title='exposure'>1/160</abbr><abbr title='aperture'>4.5</abbr><abbr title='focal length'>41</abbr></div><abbr title='camera make and model'>Canon Canon EOS R5</abbr><abbr title='date'>12/5/2024 7:10:12 PM</abbr>",
+        thumb: "thumbnails/WILL9666.JPG",
+        image: "WILL9666.JPG"
+      },
+{
+        title: "WILL9685",
+        description: "<div class='film-meta'><abbr title='film speed'>800</abbr><abbr title='exposure'>1/80</abbr><abbr title='aperture'>5.0</abbr><abbr title='focal length'>42</abbr></div><abbr title='camera make and model'>Canon Canon EOS R5</abbr><abbr title='date'>12/5/2024 7:11:03 PM</abbr>",
+        thumb: "thumbnails/WILL9685.JPG",
+        image: "WILL9685.JPG"
+      },
+{
+        title: "WILL9694",
+        description: "<div class='film-meta'><abbr title='film speed'>800</abbr><abbr title='exposure'>1/80</abbr><abbr title='aperture'>5.0</abbr><abbr title='focal length'>49</abbr></div><abbr title='camera make and model'>Canon Canon EOS R5</abbr><abbr title='date'>12/5/2024 7:11:14 PM</abbr>",
+        thumb: "thumbnails/WILL9694.JPG",
+        image: "WILL9694.JPG"
+      },
+{
+        title: "WILL9698",
+        description: "<div class='film-meta'><abbr title='film speed'>800</abbr><abbr title='exposure'>1/60</abbr><abbr title='aperture'>5.0</abbr><abbr title='focal length'>45</abbr></div><abbr title='camera make and model'>Canon Canon EOS R5</abbr><abbr title='date'>12/5/2024 7:12:04 PM</abbr>",
+        thumb: "thumbnails/WILL9698.JPG",
+        image: "WILL9698.JPG"
+      },
+{
+        title: "WILL9707",
+        description: "<div class='film-meta'><abbr title='film speed'>800</abbr><abbr title='exposure'>1/60</abbr><abbr title='aperture'>5.0</abbr><abbr title='focal length'>45</abbr></div><abbr title='camera make and model'>Canon Canon EOS R5</abbr><abbr title='date'>12/5/2024 7:13:04 PM</abbr>",
+        thumb: "thumbnails/WILL9707.JPG",
+        image: "WILL9707.JPG"
+      },
+{
+        title: "WILL9712",
+        description: "<div class='film-meta'><abbr title='film speed'>800</abbr><abbr title='exposure'>1/60</abbr><abbr title='aperture'>5.0</abbr><abbr title='focal length'>47</abbr></div><abbr title='camera make and model'>Canon Canon EOS R5</abbr><abbr title='date'>12/5/2024 7:13:42 PM</abbr>",
+        thumb: "thumbnails/WILL9712.JPG",
+        image: "WILL9712.JPG"
+      },
+{
+        title: "WILL9716",
+        description: "<div class='film-meta'><abbr title='film speed'>800</abbr><abbr title='exposure'>1/60</abbr><abbr title='aperture'>5.0</abbr><abbr title='focal length'>47</abbr></div><abbr title='camera make and model'>Canon Canon EOS R5</abbr><abbr title='date'>12/5/2024 7:14:20 PM</abbr>",
+        thumb: "thumbnails/WILL9716.JPG",
+        image: "WILL9716.JPG"
+      },
+{
+        title: "WILL9720",
+        description: "<div class='film-meta'><abbr title='film speed'>800</abbr><abbr title='exposure'>1/60</abbr><abbr title='aperture'>5.0</abbr><abbr title='focal length'>44</abbr></div><abbr title='camera make and model'>Canon Canon EOS R5</abbr><abbr title='date'>12/5/2024 7:15:02 PM</abbr>",
+        thumb: "thumbnails/WILL9720.JPG",
+        image: "WILL9720.JPG"
+      },
+{
+        title: "WILL9725",
+        description: "<div class='film-meta'><abbr title='film speed'>800</abbr><abbr title='exposure'>1/60</abbr><abbr title='aperture'>5.0</abbr><abbr title='focal length'>70</abbr></div><abbr title='camera make and model'>Canon Canon EOS R5</abbr><abbr title='date'>12/5/2024 7:15:24 PM</abbr>",
+        thumb: "thumbnails/WILL9725.JPG",
+        image: "WILL9725.JPG"
+      },
+{
+        title: "WILL9736",
+        description: "<div class='film-meta'><abbr title='film speed'>800</abbr><abbr title='exposure'>1/60</abbr><abbr title='aperture'>5.0</abbr><abbr title='focal length'>44</abbr></div><abbr title='camera make and model'>Canon Canon EOS R5</abbr><abbr title='date'>12/5/2024 7:16:58 PM</abbr>",
+        thumb: "thumbnails/WILL9736.JPG",
+        image: "WILL9736.JPG"
+      },
+{
+        title: "WILL9748",
+        description: "<div class='film-meta'><abbr title='film speed'>800</abbr><abbr title='exposure'>1/100</abbr><abbr title='aperture'>5.0</abbr><abbr title='focal length'>47</abbr></div><abbr title='camera make and model'>Canon Canon EOS R5</abbr><abbr title='date'>12/5/2024 7:18:08 PM</abbr>",
+        thumb: "thumbnails/WILL9748.JPG",
+        image: "WILL9748.JPG"
+      },
+{
+        title: "WILL9753",
+        description: "<div class='film-meta'><abbr title='film speed'>800</abbr><abbr title='exposure'>1/100</abbr><abbr title='aperture'>5.0</abbr><abbr title='focal length'>70</abbr></div><abbr title='camera make and model'>Canon Canon EOS R5</abbr><abbr title='date'>12/5/2024 7:18:31 PM</abbr>",
+        thumb: "thumbnails/WILL9753.JPG",
+        image: "WILL9753.JPG"
+      },
+{
+        title: "WILL9759",
+        description: "<div class='film-meta'><abbr title='film speed'>1250</abbr><abbr title='exposure'>1/100</abbr><abbr title='aperture'>5.0</abbr><abbr title='focal length'>62</abbr></div><abbr title='camera make and model'>Canon Canon EOS R5</abbr><abbr title='date'>12/5/2024 7:18:47 PM</abbr>",
+        thumb: "thumbnails/WILL9759.JPG",
+        image: "WILL9759.JPG"
+      },
+{
+        title: "WILL9764",
+        description: "<div class='film-meta'><abbr title='film speed'>1250</abbr><abbr title='exposure'>1/100</abbr><abbr title='aperture'>5.0</abbr><abbr title='focal length'>68</abbr></div><abbr title='camera make and model'>Canon Canon EOS R5</abbr><abbr title='date'>12/5/2024 7:18:54 PM</abbr>",
+        thumb: "thumbnails/WILL9764.JPG",
+        image: "WILL9764.JPG"
+      },
+{
+        title: "WILL9768",
+        description: "<div class='film-meta'><abbr title='film speed'>1250</abbr><abbr title='exposure'>1/100</abbr><abbr title='aperture'>7.1</abbr><abbr title='focal length'>30</abbr></div><abbr title='camera make and model'>Canon Canon EOS R5</abbr><abbr title='date'>12/5/2024 7:19:41 PM</abbr>",
+        thumb: "thumbnails/WILL9768.JPG",
+        image: "WILL9768.JPG"
+      },
+{
+        title: "WILL9775",
+        description: "<div class='film-meta'><abbr title='film speed'>1250</abbr><abbr title='exposure'>1/100</abbr><abbr title='aperture'>7.1</abbr><abbr title='focal length'>28</abbr></div><abbr title='camera make and model'>Canon Canon EOS R5</abbr><abbr title='date'>12/5/2024 7:19:59 PM</abbr>",
+        thumb: "thumbnails/WILL9775.JPG",
+        image: "WILL9775.JPG"
+      },
+{
+        title: "WILL9787",
+        description: "<div class='film-meta'><abbr title='film speed'>3200</abbr><abbr title='exposure'>1/40</abbr><abbr title='aperture'>10.0</abbr><abbr title='focal length'>18</abbr></div><abbr title='camera make and model'>Canon Canon EOS R5</abbr><abbr title='date'>12/5/2024 7:23:28 PM</abbr>",
+        thumb: "thumbnails/WILL9787.JPG",
+        image: "WILL9787.JPG"
+      },
+{
+        title: "WILL9796",
+        description: "<div class='film-meta'><abbr title='film speed'>3200</abbr><abbr title='exposure'>1/40</abbr><abbr title='aperture'>10.0</abbr><abbr title='focal length'>32</abbr></div><abbr title='camera make and model'>Canon Canon EOS R5</abbr><abbr title='date'>12/5/2024 7:25:20 PM</abbr>",
+        thumb: "thumbnails/WILL9796.JPG",
+        image: "WILL9796.JPG"
+      },
+{
+        title: "WILL9799",
+        description: "<div class='film-meta'><abbr title='film speed'>3200</abbr><abbr title='exposure'>1/50</abbr><abbr title='aperture'>10.0</abbr><abbr title='focal length'>29</abbr></div><abbr title='camera make and model'>Canon Canon EOS R5</abbr><abbr title='date'>12/5/2024 7:28:33 PM</abbr>",
+        thumb: "thumbnails/WILL9799.JPG",
+        image: "WILL9799.JPG"
+      },
+{
+        title: "WILL9811",
+        description: "<div class='film-meta'><abbr title='film speed'>8000</abbr><abbr title='exposure'>1/80</abbr><abbr title='aperture'>5.6</abbr><abbr title='focal length'>23</abbr></div><abbr title='camera make and model'>Canon Canon EOS R5</abbr><abbr title='date'>12/5/2024 7:29:33 PM</abbr>",
+        thumb: "thumbnails/WILL9811.JPG",
+        image: "WILL9811.JPG"
+      },
+{
+        title: "WILL9816",
+        description: "<div class='film-meta'><abbr title='film speed'>8000</abbr><abbr title='exposure'>1/80</abbr><abbr title='aperture'>5.6</abbr><abbr title='focal length'>23</abbr></div><abbr title='camera make and model'>Canon Canon EOS R5</abbr><abbr title='date'>12/5/2024 7:30:22 PM</abbr>",
+        thumb: "thumbnails/WILL9816.JPG",
+        image: "WILL9816.JPG"
+      },
+{
+        title: "WILL9823",
+        description: "<div class='film-meta'><abbr title='film speed'>8000</abbr><abbr title='exposure'>1/80</abbr><abbr title='aperture'>5.6</abbr><abbr title='focal length'>24</abbr></div><abbr title='camera make and model'>Canon Canon EOS R5</abbr><abbr title='date'>12/5/2024 7:31:10 PM</abbr>",
+        thumb: "thumbnails/WILL9823.JPG",
+        image: "WILL9823.JPG"
+      },
+{
+        title: "WILL9835",
+        description: "<div class='film-meta'><abbr title='film speed'>8000</abbr><abbr title='exposure'>1/80</abbr><abbr title='aperture'>5.6</abbr><abbr title='focal length'>19</abbr></div><abbr title='camera make and model'>Canon Canon EOS R5</abbr><abbr title='date'>12/5/2024 7:33:23 PM</abbr>",
+        thumb: "thumbnails/WILL9835.JPG",
+        image: "WILL9835.JPG"
+      },
+{
+        title: "WILL9844",
+        description: "<div class='film-meta'><abbr title='film speed'>8000</abbr><abbr title='exposure'>1/80</abbr><abbr title='aperture'>5.6</abbr><abbr title='focal length'>21</abbr></div><abbr title='camera make and model'>Canon Canon EOS R5</abbr><abbr title='date'>12/5/2024 8:05:28 PM</abbr>",
+        thumb: "thumbnails/WILL9844.JPG",
+        image: "WILL9844.JPG"
+      },
+{
+        title: "WILL9849",
+        description: "<div class='film-meta'><abbr title='film speed'>2000</abbr><abbr title='exposure'>1/20</abbr><abbr title='aperture'>8.0</abbr><abbr title='focal length'>29</abbr></div><abbr title='camera make and model'>Canon Canon EOS R5</abbr><abbr title='date'>12/5/2024 8:07:39 PM</abbr>",
+        thumb: "thumbnails/WILL9849.JPG",
+        image: "WILL9849.JPG"
+      },
+{
+        title: "WILL9858",
+        description: "<div class='film-meta'><abbr title='film speed'>8000</abbr><abbr title='exposure'>1/100</abbr><abbr title='aperture'>6.3</abbr><abbr title='focal length'>22</abbr></div><abbr title='camera make and model'>Canon Canon EOS R5</abbr><abbr title='date'>12/5/2024 8:22:28 PM</abbr>",
+        thumb: "thumbnails/WILL9858.JPG",
+        image: "WILL9858.JPG"
+      },
+{
+        title: "WILL9868",
+        description: "<div class='film-meta'><abbr title='film speed'>8000</abbr><abbr title='exposure'>1/100</abbr><abbr title='aperture'>6.3</abbr><abbr title='focal length'>35</abbr></div><abbr title='camera make and model'>Canon Canon EOS R5</abbr><abbr title='date'>12/5/2024 8:22:53 PM</abbr>",
+        thumb: "thumbnails/WILL9868.JPG",
+        image: "WILL9868.JPG"
+      },
+{
+        title: "WILL9873",
+        description: "<div class='film-meta'><abbr title='film speed'>8000</abbr><abbr title='exposure'>1/100</abbr><abbr title='aperture'>6.3</abbr><abbr title='focal length'>35</abbr></div><abbr title='camera make and model'>Canon Canon EOS R5</abbr><abbr title='date'>12/5/2024 8:24:46 PM</abbr>",
+        thumb: "thumbnails/WILL9873.JPG",
+        image: "WILL9873.JPG"
+      },
+{
+        title: "WILL9878",
+        description: "<div class='film-meta'><abbr title='film speed'>8000</abbr><abbr title='exposure'>1/100</abbr><abbr title='aperture'>6.3</abbr><abbr title='focal length'>35</abbr></div><abbr title='camera make and model'>Canon Canon EOS R5</abbr><abbr title='date'>12/5/2024 8:25:54 PM</abbr>",
+        thumb: "thumbnails/WILL9878.JPG",
+        image: "WILL9878.JPG"
+      },
+{
+        title: "WILL9891",
+        description: "<div class='film-meta'><abbr title='film speed'>8000</abbr><abbr title='exposure'>1/100</abbr><abbr title='aperture'>6.3</abbr><abbr title='focal length'>29</abbr></div><abbr title='camera make and model'>Canon Canon EOS R5</abbr><abbr title='date'>12/5/2024 8:26:43 PM</abbr>",
+        thumb: "thumbnails/WILL9891.JPG",
+        image: "WILL9891.JPG"
+      },
+{
+        title: "WILL9892",
+        description: "<div class='film-meta'><abbr title='film speed'>8000</abbr><abbr title='exposure'>1/100</abbr><abbr title='aperture'>6.3</abbr><abbr title='focal length'>29</abbr></div><abbr title='camera make and model'>Canon Canon EOS R5</abbr><abbr title='date'>12/5/2024 8:26:50 PM</abbr>",
+        thumb: "thumbnails/WILL9892.JPG",
+        image: "WILL9892.JPG"
+      },
+{
+        title: "WILL9898",
+        description: "<div class='film-meta'><abbr title='film speed'>8000</abbr><abbr title='exposure'>1/100</abbr><abbr title='aperture'>6.3</abbr><abbr title='focal length'>35</abbr></div><abbr title='camera make and model'>Canon Canon EOS R5</abbr><abbr title='date'>12/5/2024 8:28:35 PM</abbr>",
+        thumb: "thumbnails/WILL9898.JPG",
+        image: "WILL9898.JPG"
+      },
+{
+        title: "WILL9907",
+        description: "<div class='film-meta'><abbr title='film speed'>8000</abbr><abbr title='exposure'>1/100</abbr><abbr title='aperture'>6.3</abbr><abbr title='focal length'>35</abbr></div><abbr title='camera make and model'>Canon Canon EOS R5</abbr><abbr title='date'>12/5/2024 8:29:29 PM</abbr>",
+        thumb: "thumbnails/WILL9907.JPG",
+        image: "WILL9907.JPG"
+      },
+{
+        title: "WILL9910",
+        description: "<div class='film-meta'><abbr title='film speed'>8000</abbr><abbr title='exposure'>1/100</abbr><abbr title='aperture'>6.3</abbr><abbr title='focal length'>19</abbr></div><abbr title='camera make and model'>Canon Canon EOS R5</abbr><abbr title='date'>12/5/2024 8:31:21 PM</abbr>",
+        thumb: "thumbnails/WILL9910.JPG",
+        image: "WILL9910.JPG"
+      },
+{
+        title: "WILL9914",
+        description: "<div class='film-meta'><abbr title='film speed'>8000</abbr><abbr title='exposure'>1/80</abbr><abbr title='aperture'>6.3</abbr><abbr title='focal length'>34</abbr></div><abbr title='camera make and model'>Canon Canon EOS R5</abbr><abbr title='date'>12/5/2024 8:31:27 PM</abbr>",
+        thumb: "thumbnails/WILL9914.JPG",
+        image: "WILL9914.JPG"
+      },
+{
+        title: "WILL9919",
+        description: "<div class='film-meta'><abbr title='film speed'>8000</abbr><abbr title='exposure'>1/80</abbr><abbr title='aperture'>6.3</abbr><abbr title='focal length'>30</abbr></div><abbr title='camera make and model'>Canon Canon EOS R5</abbr><abbr title='date'>12/5/2024 8:32:45 PM</abbr>",
+        thumb: "thumbnails/WILL9919.JPG",
+        image: "WILL9919.JPG"
+      },
+{
+        title: "WILL9933",
+        description: "<div class='film-meta'><abbr title='film speed'>8000</abbr><abbr title='exposure'>1/50</abbr><abbr title='aperture'>6.3</abbr><abbr title='focal length'>20</abbr></div><abbr title='camera make and model'>Canon Canon EOS R5</abbr><abbr title='date'>12/5/2024 8:33:20 PM</abbr>",
+        thumb: "thumbnails/WILL9933.JPG",
+        image: "WILL9933.JPG"
+      },
+{
+        title: "WILL9946",
+        description: "<div class='film-meta'><abbr title='film speed'>8000</abbr><abbr title='exposure'>1/50</abbr><abbr title='aperture'>6.3</abbr><abbr title='focal length'>26</abbr></div><abbr title='camera make and model'>Canon Canon EOS R5</abbr><abbr title='date'>12/5/2024 8:34:09 PM</abbr>",
+        thumb: "thumbnails/WILL9946.JPG",
+        image: "WILL9946.JPG"
+      },
+{
+        title: "WILL9955",
+        description: "<div class='film-meta'><abbr title='film speed'>8000</abbr><abbr title='exposure'>1/50</abbr><abbr title='aperture'>6.3</abbr><abbr title='focal length'>27</abbr></div><abbr title='camera make and model'>Canon Canon EOS R5</abbr><abbr title='date'>12/5/2024 8:34:37 PM</abbr>",
+        thumb: "thumbnails/WILL9955.JPG",
+        image: "WILL9955.JPG"
+      },
+{
+        title: "WILL9977",
+        description: "<div class='film-meta'><abbr title='film speed'>8000</abbr><abbr title='exposure'>1/50</abbr><abbr title='aperture'>6.3</abbr><abbr title='focal length'>23</abbr></div><abbr title='camera make and model'>Canon Canon EOS R5</abbr><abbr title='date'>12/5/2024 8:37:27 PM</abbr>",
+        thumb: "thumbnails/WILL9977.JPG",
+        image: "WILL9977.JPG"
+      },
+{
+        title: "WILL9980",
+        description: "<div class='film-meta'><abbr title='film speed'>8000</abbr><abbr title='exposure'>1/50</abbr><abbr title='aperture'>6.3</abbr><abbr title='focal length'>35</abbr></div><abbr title='camera make and model'>Canon Canon EOS R5</abbr><abbr title='date'>12/5/2024 8:42:50 PM</abbr>",
+        thumb: "thumbnails/WILL9980.JPG",
+        image: "WILL9980.JPG"
+      },
+{
+        title: "WILL9993",
+        description: "<div class='film-meta'><abbr title='film speed'>8000</abbr><abbr title='exposure'>1/40</abbr><abbr title='aperture'>6.3</abbr><abbr title='focal length'>35</abbr></div><abbr title='camera make and model'>Canon Canon EOS R5</abbr><abbr title='date'>12/5/2024 8:44:36 PM</abbr>",
+        thumb: "thumbnails/WILL9993.JPG",
+        image: "WILL9993.JPG"
+      },
+{
+        title: "WILL9996",
+        description: "<div class='film-meta'><abbr title='film speed'>12800</abbr><abbr title='exposure'>1/40</abbr><abbr title='aperture'>6.3</abbr><abbr title='focal length'>20</abbr></div><abbr title='camera make and model'>Canon Canon EOS R5</abbr><abbr title='date'>12/5/2024 8:48:53 PM</abbr>",
+        thumb: "thumbnails/WILL9996.JPG",
+        image: "WILL9996.JPG"
+      },
+    ]
+
+    Galleria.ready(function() {
+        /*
+        load thumbnails after gallery setup, and download has started
+        for the main images, but before the loading of map tiles starts
+        in the background. This ensures visible elements are prioritised
+        over non-visible elements
+
+        The choice to lazy load thumbnails in batches of 50 was not made
+        scientifically. Other numbers may yield better performance.
+        */
+        this.lazyLoadChunks( 50 );
+
+        this.attachKeyboard({
+            right: this.next,
+            left: this.prev,
+            /* Toggle fullscreen display on press of 'f' key */
+            0x46: this.toggleFullscreen,
+        });
+
+        var gallery = this;
+        $('#fullscreen').click(function() {
+          gallery.toggleFullscreen();
+        });
+
+        $('.icons').appendTo(this.$('container'));
+    });
+
+    Galleria.configure({
+        imageCrop: false,
+        transition: "fade",
+        thumbnails: "lazy"
+    });
+    Galleria.run("#gallery", {dataSource: data});
+
+    </script>
+      </div>
+<footer>
+  <p>
+    <span>Generated by <a href="https://github.com/saimn/sigal">sigal</a></span>
+  </p>
+</footer>    </div>
+  </body>
+</html>
